@@ -1,0 +1,7 @@
+Deploy Linux Server
+Allow all traffic to the Serevr for now
+Login to Sever through Putty 
+Install Prometheus through github url 
+    Git clone Reposiroty
+        -   git clone 
+
