@@ -1,0 +1,33 @@
+Navigat to Script folder an run the installation file
+cd prometheus-course/scripts
+./3-install-grafana.sh
+
+to check grafana is running
+
+ps uax | grep grafana
+
+Port 3000 should be Allow
+
+http://13.89.242.105:3000/login
+
+Deafult Username and Password  -  admin
+
+- Configure Basic grafana
+
+    - navigate to Settings (Configuration ) > Add data source > Select prometheus
+    - Add the local host details and save the data source
+    - Navigate to Add icon and Create the Dashboard
+
+
+Grafana Installtion Script
+
+#!/bin/bash
+echo 'deb https://packages.grafana.com/oss/deb stable main' >> /etc/apt/sources.list
+curl https://packages.grafana.com/gpg.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get -y install grafana
+
+systemctl daemon-reload
+systemctl start grafana-server
+systemctl enable grafana-server.service
+
