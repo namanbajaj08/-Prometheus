@@ -14,7 +14,8 @@ Install Prometheus through github url
     Naviage to Prometheus Web URL on the Sever IP with Port 9090
         - Allow to port to NSG
         - VM IP:9090/graph
-
+    http://13.89.242.105:9090/graph
+    
 
     
 
