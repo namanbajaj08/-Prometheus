@@ -3,5 +3,18 @@ Allow all traffic to the Serevr for now
 Login to Sever through Putty 
 Install Prometheus through github url 
     Git clone Reposiroty
-        -   git clone 
+        -   git clone https://github.com/in4it/prometheus-course.git
+        -   cd prometheus-course/scripts
+        -   ./1-install.sh
+
+    Check the Prometheus is running or not
+
+        -   ps aux | grep prometheus
+
+    Naviage to Prometheus Web URL on the Sever IP with Port 9090
+        - Allow to port to NSG
+        - VM IP:9090/graph
+
+
+    
 
